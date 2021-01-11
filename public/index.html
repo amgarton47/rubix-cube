@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <script type="text/javascript" src="../libraries/p5.js"></script>
+    <script src="../libraries/p5.easycam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <span id="scramble" class="fade-in">Press [!] to scramble, [space] to toggle timer</span>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Hot keys
+      </button>
+      <div class="dropdown-content">
+        <h3>Hot keys</h3>
+        <table>
+          <tr>
+            <th>
+              Clockwise turns
+            </th>
+            <th>
+              Counterclockwise turns
+            </th>
+            <th>
+              Middle layer slices
+            </th>
+          </tr>
+          <tr>
+            <td>U = 'U'</td>
+            <td>U* = 'u'</td>
+            <td>M = 'M'</td>
+          </tr>
+          <tr>
+            <td>L = 'L'</td>
+            <td>L* = 'l'</td>
+            <td>M* = 'm'</td>
+          </tr>
+          <tr>
+            <td>F = 'F'</td>
+            <td>F* = 'f'</td>
+            <td>E = 'E'</td>
+          </tr>
+          <tr>
+            <td>R = 'R'</td>
+            <td>R* = 'r'</td>
+            <td>E* = 'e'</td>
+          </tr>
+          <tr>
+            <td>B = 'B'</td>
+            <td>B* = 'b'</td>
+            <td>S = 'S'</td>
+          </tr>
+          <tr>
+            <td>D = 'D'</td>
+            <td>D* = 'd'</td>
+            <td>S* = 's'</td>
+          </tr>
+        </table>
+        <h4 style="text-align: center;">
+          Press spacebar to scramble
+        </h4>
+        <h4 style="text-align: center;">
+          (Double click to restore initial orientation)
+        </h4>
+      </div>
+      <h1 class="time" id="display" style="text-align: center;">00:00:00</h1>
+      <h2 style= "margin-left: 20px; color: white;">
+        Times: 
+      </h3>
+      <ol id="timesList" style="color:white">
+      </ol>
+    </div>
+  </body>
+  <script src="sketch.js"></script>
+</html>
